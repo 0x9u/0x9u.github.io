@@ -3,7 +3,7 @@ body {
   background: linear-gradient(to right, #1e1e1e, #121212);
   color: #ffffff;
   font-family:monospace;
-  font-size: 1.2em;
+  font-weight: 100;
   padding: 0;
   margin: 0;
   text-align: center;
@@ -52,6 +52,10 @@ a:active {
 
 .main-section {
   box-shadow: 4px 4px 24px rgba(255, 255, 255, 0.5);
+  width: 40rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .titlebar {
@@ -59,7 +63,7 @@ a:active {
   display: flex;
   padding: 0.25rem 0.65rem;
   background: #252526;
-  font-size: 1.25rem
+  font-size: 2.5rem
 }
 
 .window-content {
@@ -68,11 +72,15 @@ a:active {
   border: #252526 0.65rem solid;
   border-top: 0;
   text-align: left;
-  font-size: 0.95rem;
+  font-size: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .prompt {
-  margin-top: 0.5rem;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
 }
 
 .cursor {
